@@ -1,16 +1,26 @@
-# This is a sample Python script.
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+def select_main_category(p_categories):
+    pass
 
+def select_sub_category(p_categories):
+    pass
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+def get_next_question_list():
+    pass
 
+def get_previous_question_list():
+    pass
+
+def make_trees():
+    pass
+
+def send_recommended_books():
+    pass
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    main_categories = ['소설', '만화', '참고서']
+    sub_categories = [['로맨스', '스릴러', 'SF'], # 소설에 대한 소분류
+                      ['교육', '역사', '과학'],   # 만화에 대한 소분류
+                      ['과학', '사회', '인문학']]  # 참고서에 대한 소분류
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
