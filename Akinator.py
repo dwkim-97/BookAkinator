@@ -1,9 +1,11 @@
 
 def select_main_category(p_categories):
-    pass
+    selected = 1    # 사용자가 선택한 대분류 int
+    return selected
 
 def select_sub_category(p_categories):
-    pass
+    selected = 1  # 사용자가 선택한 소분류 int
+    return selected
 
 def get_next_question_list():
     pass
@@ -23,4 +25,7 @@ if __name__ == '__main__':
     sub_categories = [['로맨스', '스릴러', 'SF'], # 소설에 대한 소분류
                       ['교육', '역사', '과학'],   # 만화에 대한 소분류
                       ['과학', '사회', '인문학']]  # 참고서에 대한 소분류
+
+    main_category = select_main_category(main_categories)
+    sub_category = select_sub_category(sub_categories)
 
