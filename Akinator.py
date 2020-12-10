@@ -1,4 +1,17 @@
 
+def get_book_list():
+    book_list = []
+    f = open("data/BookDB.txt", 'r', encoding='UTF-8')
+    line = f.readline()
+    while True:
+        line = f.readline()
+        if not line:
+            break
+        aBook = line.split(',')
+        book_list.append(aBook)
+
+    return book_list
+
 def select_main_category(p_categories):
     selected = 1    # 사용자가 선택한 대분류 int
     return selected
@@ -26,6 +39,11 @@ if __name__ == '__main__':
                       ['교육', '역사', '과학'],   # 만화에 대한 소분류
                       ['과학', '사회', '인문학']]  # 참고서에 대한 소분류
 
-    main_category = select_main_category(main_categories)
-    sub_category = select_sub_category(sub_categories)
+    total_book_list = get_book_list()
+    for book in total_book_list:
+        print(book)
+
+
+    #main_category = select_main_category(main_categories)
+    #sub_category = select_sub_category(sub_categories)
 
